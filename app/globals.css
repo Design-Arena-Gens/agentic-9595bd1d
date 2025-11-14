@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-slate-100;
+  }
+}
+
+@layer utilities {
+  .slide-section {
+    @apply min-h-screen flex items-center justify-center p-8;
+  }
+
+  .slide-content {
+    @apply max-w-7xl w-full;
+  }
+
+  .slide-title {
+    @apply text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent;
+  }
+
+  .slide-subtitle {
+    @apply text-3xl md:text-4xl font-semibold mb-6 text-blue-300;
+  }
+}
